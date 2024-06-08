@@ -18,10 +18,6 @@
 ```sh
 npx create-expo-app init MyApp --template template-reactnative-setup
 ```
-## :computer: Contributing
-
-Contributions are very welcome. Please check out the [contributing document](CONTRIBUTING.md).
-
 ## :bookmark: License
 
 This project is [MIT](https://github.com/Luizrebelatto/template-reactnative-setup/blob/master/LICENSE) licensed.
