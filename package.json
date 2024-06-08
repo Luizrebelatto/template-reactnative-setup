@@ -26,5 +26,25 @@
     "@types/styled-components": "^5.1.34",
     "react-native-svg-transformer": "^1.4.0",
     "typescript": "~5.3.3"
-  }
+  },
+  "description": "A simple template with styled-components",
+  "keywords": [
+    "expo",
+    "template",
+    "expo-template",
+    "react-native",
+    "react-native-template",
+    "styled-components",
+    "typescript"
+  ],
+  "homepage": "https://github.com/Luizrebelatto/template-reactnative-setup",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luizrebelatto/template-reactnative-setup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Luizrebelatto/template-reactnative-setup/issues"
+  },
+  "author": "Luiz Gabriel Rebelatto",
+  "license": "MIT"
 }
