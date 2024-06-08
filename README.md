@@ -18,6 +18,18 @@
 ```sh
 npx create-expo-app init MyApp --template template-reactnative-setup
 ```
+
+## ⚒️ How to Environments:
+- create a file .env, inside these files creates its variables:
+
+```.env
+BASE_URL=
+```
+
+## :computer: Contributing
+
+Contributions are very welcome. Please check out the [contributing document](https://github.com/Luizrebelatto/template-reactnative-setup/blob/master/CONTRIBUTING.MD).
+
 ## :bookmark: License
 
 This project is [MIT](https://github.com/Luizrebelatto/template-reactnative-setup/blob/master/LICENSE) licensed.
