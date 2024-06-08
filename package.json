@@ -1,6 +1,6 @@
 {
   "name": "template-reactnative-setup",
-  "version": "1.0.0",
+  "version": "1.8.0",
   "main": "index.js",
   "scripts": {
     "start": "expo start --dev-client",
@@ -31,7 +31,7 @@
     "react-native-svg-transformer": "^1.4.0",
     "typescript": "~5.3.3"
   },
-  "description": "A simple template with styled-components",
+  "description": "React Native template for a quick start with TypeScript, React Navigation, styled-components, async-storage, dotenv",
   "keywords": [
     "expo",
     "template",
@@ -39,7 +39,9 @@
     "react-native",
     "react-native-template",
     "styled-components",
-    "typescript"
+    "typescript",
+    "react-navigation",
+    "dotenv"
   ],
   "homepage": "https://github.com/Luizrebelatto/template-reactnative-setup",
   "repository": {
