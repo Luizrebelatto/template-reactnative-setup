@@ -16,7 +16,7 @@
 ## ▶️ How to Execute:
 
 ```sh
-npx create-expo-app init MyApp --template template-reactnative-setup
+npx create-expo-app NameOfApp --template template-reactnative-setup
 ```
 
 ## ⚒️ How to Environments:
