@@ -1,8 +1,8 @@
-## :space_invader: React Native Template Setup Typescript
+## 📄 React Native Template Setup Typescript
 
 > React Native template for a quick start with TypeScript, React Navigation, styled-components, async-storage, dotenv.
 
-## :star: Features
+## ⭐ Features
 - Navigation no next screen
 
 
@@ -19,17 +19,39 @@
 npx create-expo-app NameOfApp --template template-reactnative-setup
 ```
 
-## ⚒️ How to Environments:
+## ⚙️ How to Config Environments:
 - create a file .env, inside these files creates its variables:
 
 ```.env
 BASE_URL=
 ```
 
-## :computer: Contributing
+## 🎨 Config your styles:
+- create your types variables inside file styled.d.ts
+
+```
+declare module "styled-components/native" {
+    export interface DefaultTheme {
+        colors: {
+            background: string
+        }
+    }
+}
+```
+
+- create your variables and set your value
+```
+export default {
+    colors: {
+        background: "#FEFEFE"
+    }
+}
+```
+
+## 🤝 Contributing
 
 Contributions are very welcome. Please check out the [contributing document](https://github.com/Luizrebelatto/template-reactnative-setup/blob/master/CONTRIBUTING.MD).
 
-## :bookmark: License
+## 📖 License
 
 This project is [MIT](https://github.com/Luizrebelatto/template-reactnative-setup/blob/master/LICENSE) licensed.
