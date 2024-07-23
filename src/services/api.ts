@@ -23,7 +23,7 @@ const createApiInstance = (
 			(response: any) => {
 				return response;
 			},
-			async (error) => {
+			async (error: StatusMessages) => {
 				return Promise.reject(error);
 			},
 		);
