@@ -55,6 +55,12 @@ export default {
     npx expo start --clear
 ```
 
+- Run eslint
+```
+    yarn run lint
+    yarn run lint: fix
+```
+
 - Run to deploy your app with fastlane
 ```
     yarn run deploy:android
