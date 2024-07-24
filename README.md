@@ -4,7 +4,7 @@
 
 ## ⭐ Features
 - Navigation no next screen
-
+- Authentication Flow user
 
 ## 📚 dependencies
 - [Typescript](https://www.typescriptlang.org)
