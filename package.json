@@ -72,7 +72,7 @@
       }
     }
   },
-  "description": "React Native template for a quick start with TypeScript, React Navigation, styled-components, async-storage, dotenv, axios, fastlane",
+  "description": "React Native template for a quick start with TypeScript, React Navigation, styled-components, async-storage, dotenv, axios, fastlane, prettier, eslint, jest, react native testing library",
   "keywords": [
     "expo",
     "template",
@@ -86,7 +86,11 @@
     "axios",
     "services",
     "deploy",
-    "fastlane"
+    "fastlane",
+    "prettier",
+    "eslint",
+    "jest",
+    "react-native-testing-library"
   ],
   "homepage": "https://github.com/Luizrebelatto/template-reactnative-setup",
   "repository": {

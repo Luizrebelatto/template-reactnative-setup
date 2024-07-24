@@ -1,6 +1,6 @@
 ## 📄 React Native Template Setup Typescript
 
-> React Native template for a quick start with TypeScript, React Navigation, styled-components, async-storage, dotenv, fastlane, prettier, eslint.
+> React Native template for a quick start with TypeScript, React Navigation, styled-components, async-storage, dotenv, fastlane, prettier, eslint, jest, react native testing library.
 
 ## ⭐ Features
 - Navigation no next screen
@@ -12,6 +12,11 @@
 - [Styled-Components](https://www.npmjs.com/package/styled-components)
 - [Async-Storage](https://react-native-async-storage.github.io/async-storage/)
 - [React Navigation V6](https://reactnavigation.org/docs/getting-started/)
+- [Eslint](https://eslint.org)
+- [Fastlane](https://fastlane.tools)
+- [Jest](https://jest.io)
+- [React Native Testing Library](https://callstack.github.io/react-native-testing-library/)
+- [Prettier](https://prettier.io)
 
 ## ▶️ How to Execute:
 
