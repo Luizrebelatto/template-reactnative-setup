@@ -48,6 +48,20 @@ export default {
 }
 ```
 
+## ⌨️ Script to run
+
+- Run your app
+```
+    npx expo start --clear
+```
+
+- Run to deploy your app with fastlane
+```
+    yarn run deploy:android
+    yarn run deploy:ios
+    yarn run deploy:android_ios
+```
+
 ## 🤝 Contributing
 
 Contributions are very welcome. Please check out the [contributing document](https://github.com/Luizrebelatto/template-reactnative-setup/blob/master/CONTRIBUTING.MD).

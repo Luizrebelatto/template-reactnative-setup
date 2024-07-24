@@ -6,7 +6,10 @@
     "start": "expo start --dev-client",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "deploy:android": "cd android/Fastlane && Fastlane deploy",
+    "deploy:ios": "cd ios/Fastlane && Fastlane upload_testflight",
+    "deploy:android_ios": "cd ios/Fastlane && Fastlane upload_testflight && cd ../../android/Fastlane && Fastlane deploy"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.23.1",
@@ -49,7 +52,7 @@
       }
     }
   },
-  "description": "React Native template for a quick start with TypeScript, React Navigation, styled-components, async-storage, dotenv, axios",
+  "description": "React Native template for a quick start with TypeScript, React Navigation, styled-components, async-storage, dotenv, axios, fastlane",
   "keywords": [
     "expo",
     "template",
@@ -61,7 +64,9 @@
     "react-navigation",
     "dotenv",
     "axios",
-    "services"
+    "services",
+    "deploy",
+    "fastlane"
   ],
   "homepage": "https://github.com/Luizrebelatto/template-reactnative-setup",
   "repository": {
@@ -69,6 +74,7 @@
     "url": "git+https://github.com/Luizrebelatto/template-reactnative-setup.git"
   },
   "bugs": {
+    "email": "lbrebelatto@gmail.com",
     "url": "https://github.com/Luizrebelatto/template-reactnative-setup/issues"
   },
   "author": "Luiz Gabriel Rebelatto",
