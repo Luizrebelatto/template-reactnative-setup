@@ -1,0 +1,56 @@
+default_platform(:android)
+
+def getGradleProperty(property_name)
+  gradle_properties_content = File.read('../gradle.properties')
+  property_regex = /^#{property_name}=(.+)/
+  match = gradle_properties_content.match(property_regex)
+  match[1] if match
+end
+
+package_name = nil
+
+platform :android do
+  desc "Deploy to test internal to Google Play"
+
+  # You need configure your google api service and get data api
+  lane :deploy do
+    pathKeyJson = "./fastlane/configApp.json"
+    
+    previous_build_number = google_play_track_version_codes(
+      package_name: "Package name of your project",
+      json_key: pathKeyJson,
+      track: "internal",
+    )[0]
+
+    current_build_number = previous_build_number + 1
+
+    increment_version_code(
+      gradle_file_path: "./app/build.gradle",
+      version_code: current_build_number
+    )
+    
+    # Before you need configure the app to publish in play store
+    gradle(task: 'clean')
+    gradle(
+      task: 'bundleRelease',
+      properties: {
+        # storeFile: create your release key and paste app folder
+        "storeFile" => "../app/release.keystore",
+        "android.injected.signing.store.password" => getGradleProperty('MYAPP_UPLOAD_STORE_PASSWORD'),
+        "android.injected.signing.key.alias" => getGradleProperty('MYAPP_UPLOAD_KEY_ALIAS'),
+        "android.injected.signing.key.password" => getGradleProperty('MYAPP_UPLOAD_KEY_PASSWORD'),
+      }
+    )
+
+    supply(
+      json_key: pathKeyJson,
+      package_name: "Package name of your project",
+      track: 'internal',
+      skip_upload_metadata: true,
+      skip_upload_images: true,
+      skip_upload_screenshots: true,
+      skip_upload_apk: true,
+      skip_upload_aab: false
+    )
+  end
+end

@@ -1,0 +1,29 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Deploy App to Testflight"
+  lane :upload_testflight do
+    build_app(
+      workspace: "workspace_name.xcworkspace", 
+      scheme: "schema name",
+      silent: true,
+      clean: true,
+    )
+    api_key = app_store_connect_api_key(
+      key_id: "your key id",
+      issuer_id: "your issuer id",
+      key_filepath: "path auth key",
+      duration: 1200,
+      in_house: false
+    )
+
+    upload_to_testflight(
+      api_key: api_key,
+      skip_submission: true,
+      ipa: "NameIpa.ipa",
+      skip_waiting_for_build_processing: true,
+    )
+  end
+end
+
+
