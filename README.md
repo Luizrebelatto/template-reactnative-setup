@@ -1,6 +1,6 @@
 ## 📄 React Native Template Setup Typescript
 
-> React Native template for a quick start with TypeScript, React Navigation, styled-components, async-storage, dotenv.
+> React Native template for a quick start with TypeScript, React Navigation, styled-components, async-storage, dotenv, fastlane, prettier, eslint.
 
 ## ⭐ Features
 - Navigation no next screen
@@ -59,6 +59,11 @@ export default {
 ```
     yarn run lint
     yarn run lint: fix
+```
+
+- Run Prettier
+```
+    yarn run format_prettier
 ```
 
 - Run to deploy your app with fastlane
